@@ -1,0 +1,143 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+#container-header{
+	background-color: rgb(43, 43, 43);
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 23px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+	cursor: pointer;
+    margin-left: 38%;
+}
+
+.container-generi{
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.genere{
+    border: 1px solid black;
+    border-radius: 60%;
+    width: 90px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.title-generi{
+    font-weight: bold;
+	text-transform: capitalize;
+}
+
+.Title-best-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30PX;
+}
+
+.Name-Playlist{
+    font-size: 40px;
+    font-weight: 450;
+}
+
+/* inizio style delle top music immagini + nomi + prezzi */
+.container-top-music-img-title-and-price{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.top-music-container-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.top-music-container-border{
+    border: 1px solid black;
+    width: 120px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-music-1-container{
+    display: flex;
+    flex-direction: row;
+}
+.top-music-left-container{
+    width: 100%;
+    height: 98px;
+}
+
+.foto-top-music{
+    width: 100%;
+    height: 100%;
+}
+.top-music-right-container{
+    background-color: rgb(0, 255, 0);
+    height: 65px;
+}
+
+.top-music-bottom-container{
+    width: 100%;
+    background-color: yellow;
+    height: 10px;
+}
+/* OVERFLOW MUSIC */
+
+#container-stories-reel-stanze{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 170px;
+    background-color: rgb(60, 60, 60);
+    overflow-x: scroll;
+}
+
+.gruppo{
+
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    min-width: 100px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img{
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.text-storie{
+    margin-bottom: 5px;
+}
+
