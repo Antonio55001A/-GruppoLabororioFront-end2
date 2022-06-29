@@ -22,6 +22,13 @@
     margin-left: 38%;
 }
 
+.container-homepage{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #1DB954;
+}
 .container-generi{
     height: 190px;
     display: flex;
@@ -34,7 +41,7 @@
     justify-content: space-around;
 }
 .genere{
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 60%;
     width: 90px;
     height: 60px;
@@ -42,11 +49,15 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
 }
 .title-generi{
     font-weight: bold;
 	text-transform: capitalize;
+    color: #191414;
+    font-size: 15px;
 }
 
 .Title-best-product{
@@ -54,11 +65,14 @@
     justify-content: center;
     align-items: center;
     margin-top: 30PX;
+
 }
 
 .Name-Playlist{
     font-size: 40px;
     font-weight: 450;
+    color: white;
+
 }
 
 /* inizio style delle top music immagini + nomi + prezzi */
@@ -76,35 +90,36 @@
 }
 
 .top-music-container-border{
-    border: 1px solid black;
     width: 120px;
     height: 110px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: 0.8s;
+}
+
+.top-music-container-border:hover{
+    transform: scale(1.2);
+    z-index: 2;
 }
 
 .top-music-1-container{
     display: flex;
-    flex-direction: row;
+    height: 97%;
 }
-.top-music-left-container{
-    width: 100%;
-    height: 98px;
-}
+
 
 .foto-top-music{
     width: 100%;
     height: 100%;
 }
-.top-music-right-container{
-    background-color: rgb(0, 255, 0);
-    height: 65px;
-}
 
-.top-music-bottom-container{
+
+.top-music-2-container{
+    height: 3%;
     width: 100%;
+    background-color: rgb(156, 156, 156);
     background-color: yellow;
-    height: 10px;
 }
 /* OVERFLOW MUSIC */
 
