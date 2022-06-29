@@ -90,8 +90,8 @@
 }
 
 .top-music-container-border{
-    width: 120px;
-    height: 110px;
+    width: 170px;
+    height: 140px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
