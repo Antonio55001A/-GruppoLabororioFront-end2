@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aggiungi Prodotto</title>
+    <script src="../javascript/aggiungiProdotto.js" defer></script>
+  </head>
+  <body>
+    <h3>Aggiungi un prodotto</h3>
+    <hr />
+    <form action="" method="post">
+      <label for="url">URL immagine</label>
+      <br />
+      <input type="text" name="url" id="url" />
+      <br />
+      <label for="canzone">Nome canzone</label>
+      <br />
+      <input type="text" name="canzone" id="canzone" />
+      <br />
+      <label for="artista">Nome artista</label>
+      <br />
+      <input type="text" name="artista" id="artista" />
+      <br />
+      <label for="genere">Genere</label>
+      <br />
+      <select name="genere" id="genere">
+        <option value="pop">Pop</option>
+        <option value="hip-hop">Hip-Hop</option>
+        <option value="rock">Rock</option>
+        <option value="napoli">Napoli Centro</option>
+        <option value="rap">Rap</option>
+        <option value="techno">Techno</option>
+        <option value="house">House</option>
+        <option value="jazz">Jazz</option>
+      </select>
+      <br />
+      <label for="playlist">Playlist</label>
+      <br />
+      <select name="playlist" id="playlist">
+        <option value="ita">Ita</option>
+        <option value="arabi">Arabi</option>
+        <option value="gb">Gran Bretagna</option>
+      </select>
+      <br />
+      <label for="prezzo">Prezzo</label>
+      <br />
+      <input
+        type="number"
+        name="prezzo"
+        id="prezzo"
+        value="0.01"
+        min="0.01"
+        step="0.01"
+        required
+      />
+      <br />
+      <input type="submit" value="Aggiungi" id="aggiungi" />
+      <input type="reset" value="Pulisci campi" />
+    </form>
+  </body>
+</html>

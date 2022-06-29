@@ -1,12 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>ghjklòà</h1>
-</body>
-</html>
+
+#container{
+    height: 1000px;
+}   
+
+#boximg{
+    position: -webkit-sticky;
+    position: sticky;
+    height: 200px;
+    display: flex;
+    top: 0;
+    background-color: rgb(254, 248, 255);
+    padding-bottom: 60px;
+}
+
+#img1{
+    padding-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nomeplaylist{
+    height: 60px;   
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center; 
+    
+}
+
+.boxlista{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.riga{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 60px;
+    width: 100%;
+}
+
+.elenco{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-right: 20px;
+    width: 60%;
+    height: 60px;
+}
+
+p{
+    margin-left: 20px;
+    font-size: smaller;
+}
+
+.cart{
+    display: flex;
+    flex-direction: row;
+    width: 28%;
+    height:60px ;
+    justify-content: center;   
+}
+
+.imgcart{
+    height: 60px;
+    margin-left: 30px;
+}
+
+.imgartista{
+    height:60px ;
+}
+
+h6{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 20%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .column {
+        width: 100% !important;
+    }
+
+    .content-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}        
+
+
+
+
+
