@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalogo</title>
-    <script src="../javascript/catalogo.js" defer></script>
+    <!-- <script src="../javascript/catalogo.js" defer></script> -->
     <link rel="stylesheet" href="/all-files/css/catalogo.css" type="text/css">
     <link rel="stylesheet" href="/all-files/css/filterCatalogo.css" type="text/css">
 
@@ -13,24 +13,21 @@
   </head>
   <body>
 
-    <div class="container-all">
 
     <div class="title">
     <h3 id="catalogo">Catalogo</h3>
-  </div>
+       </div>
     
   <div class="container-select">
 
     <div class="select">
       <select name="artista" id="artista">
       <option value="selected disabled">Artista</option>
-    </select>
+      </select></div>
 
-  </div>
-    <br />
     <div class="select">
-    <select name="genere" id="genere">
 
+    <select name="genere" id="genere">
       <option   value="selected disabled">Genere</option>
       <option   value="pop">Pop</option>
       <option   value="hip-hop">Hip-Hop</option>
@@ -40,49 +37,55 @@
             <option   value="techno">Techno</option>
               <option   value="house">House</option>
                  <option   value="jazz">Jazz</option>
-    </select>
-  </div>
+    </select> </div>
 
 
   <div class="select">
-
-
     <select name="anno" id="anno">
       <option value="selected disabled">Anno</option>
-    </select>
-    <br />
-  </div>
+    </select></div>
 
   <!-- qui finisce container select -->
 </div>
 
-    <input type="button" value="Mostra" id="mostra" onclick="mostra()" />
+    <!-- <input type="button" value="Mostra" id="mostra" onclick="mostra()" /> -->
+    <div class="container-all">
 
 
     <div id="canzoni">
     </div>
 
       <div class="container-scritta">
-        <h5>Lista Canzoni</h5>
+        <h5 id="lista">Lista Canzoni</h5>
       </div>
 
 
       <div class="row-songs">
 
-        <div class="img" > <img src="/all-files/immagini/Blanco_nuovo_album.jpg" width="50px" height="50px"></div>
+        <div class="img" >
+           <img src="/all-files/immagini/colore-acrilico-arancione.jpg" width="50px" height="50px">
+          </div>
+
         <div class="title-artist-nameAlbum">
           <h4 class="title-of-songs">Tomorrowland</h4> 
-          <h5 class="name-of-artista">Il pagante</h5></div>
+          <h5 class="name-of-artista">Il pagante</h5>
+        </div>
         <div class="add-to-cart">
-          <img src="/all-files/immagini/shopping-cart.png" width="40px" height="40px">
+          <span class="price">1.99€</span>
+          <img class="icon-cart" src="/all-files/immagini/add-shopping-cart-icon-301424.png" width="40px" height="40px">
         </div>
 
       </div>
-    </div>
 
+
+
+
+      
+      </div>
+    
+      
 
     <!-- qui si chiude container-all -->
-  </div>
 
     
   </body>
