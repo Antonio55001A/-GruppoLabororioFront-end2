@@ -36,19 +36,21 @@ function mostra() {
     let filtroCanzoni = [...canzoni];
     let filtroArtista = document.getElementById("artista").value;
     if (filtroArtista !== "qualsiasi") {
-      filtroCanzoni = canzoni.filter(
+      filtroCanzoni = filtroCanzoni.filter(
         (canzone) => canzone.artista === filtroArtista
       );
     }
     let filtroGenere = document.getElementById("genere").value;
     if (filtroGenere !== "qualsiasi") {
-      filtroCanzoni = canzoni.filter(
+      filtroCanzoni = filtroCanzoni.filter(
         (canzone) => canzone.genere === filtroGenere
       );
     }
     let filtroAnno = document.getElementById("anno").value;
     if (filtroAnno !== "qualsiasi") {
-      filtroCanzoni = canzoni.filter((canzone) => canzone.anno == filtroAnno);
+      filtroCanzoni = filtroCanzoni.filter(
+        (canzone) => canzone.anno == filtroAnno
+      );
     }
     for (let i = 0; i < filtroCanzoni.length; i++) {
       let riquadro = document.createElement("div");

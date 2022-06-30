@@ -8,25 +8,22 @@ document.getElementById("aggiungi").addEventListener("click", function (event) {
     controllo("url") == true &&
     controllo("canzone") == true &&
     controllo("artista") == true &&
+    controllo("anno") == true &&
     controllo("genere") == true &&
     controllo("playlist") == true &&
     controllo("prezzo") == true
   ) {
-    let url = document.getElementById("url").value;
-    let canzone = document.getElementById("canzone").value;
-    let artista = document.getElementById("artista").value;
-    let genere = document.getElementById("genere").value;
-    let playlist = document.getElementById("playlist").value;
-    let prezzo = document.getElementById("prezzo").value;
-    let song = {
-      url: url,
-      canzone: canzone,
-      artista: artista,
-      genere: genere,
-      playlist: playlist,
-      prezzo: prezzo,
+    let canzone = {
+      url: document.getElementById("url").value,
+      canzone: document.getElementById("canzone").value,
+      artista: document.getElementById("artista").value,
+      anno: document.getElementById("anno").value,
+      descrizione: document.getElementById("descrizione").value,
+      genere: document.getElementById("genere").value,
+      playlist: document.getElementById("playlist").value,
+      prezzo: document.getElementById("prezzo").value,
     };
-    canzoni.push(song);
+    canzoni.push(canzone);
     localStorage.setItem("canzoni", JSON.stringify(canzoni));
   }
 });
