@@ -1,0 +1,89 @@
+*{
+	padding: 0;
+	margin: 0;
+    font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+.container-all{
+    display: flex;
+    flex-direction: column;
+
+}
+.icona-indietro{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    height: 60px;
+    align-items: center;
+}
+
+.name{
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-start;
+    margin-left: 20px;
+    align-items: center;
+}
+#cart{
+    font-size: 22px;
+}
+
+#canzoni{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+.prodotto{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 70px;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.imgContainer{
+    display: flex;
+    margin-left:10px;
+    align-items: center;
+    width: 10%;
+}
+
+.datiCanzone{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-top: 15px;
+    width: 40%;
+}
+
+.nome{
+    font-size: 16px;
+}
+
+.artistaCanzone{
+    font-size: 13px;
+}
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    width: 50%;
+    align-items: center;
+    flex-direction: row;
+
+}
+.prezzoCanzone{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
+.icon-remove{
+    margin-bottom: 5px;
+}

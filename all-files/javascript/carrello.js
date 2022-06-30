@@ -15,13 +15,13 @@ function mostra() {
       riquadro.innerHTML =
         "<div class='imgContainer'><img class='imgCanzone' src=" +
         canzoni[i].url +
-        "></div><div class='datiCanzone'><p>Nome: " +
+        "></div><div class='datiCanzone'><h4 class='nome'>Nome: " +
         canzoni[i].canzone +
-        "</p><p class='artistaCanzone'>Artista: " +
+        "</h4><h5 class='artistaCanzone'>Artista: " +
         canzoni[i].artista +
-        "</p><p class='prezzoCanzone'>Prezzo: " +
+        "</h5><h5 class='prezzoCanzone'>Prezzo: " +
         canzoni[i].prezzo +
-        "€</p></div>";
+        "€</h5></div>";
       let rimuovi = document.createElement("div");
       rimuovi.setAttribute("onclick", "rimuovi(" + i + ")");
       rimuovi.setAttribute("class", "rimuoviCanzone");

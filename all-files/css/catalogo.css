@@ -72,9 +72,16 @@
     align-items: center;
     width: 35%;
 }
-.icon-cart{
+.animate__animated.animate__tada{
+    cursor: pointer;
+
+}
+#cart:hover{
+    animation: tada;
+    animation-duration: 1.0s;
     cursor: pointer;
 }
+
 .price{
     font-size: 15px;
 }
