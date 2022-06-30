@@ -1,83 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/all-files/css/catalogo.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalogo</title>
-</head>
-<body>
-<div id="container">
-
-    <div id="boximg">
-        <img id="img1" src="https://picsum.photos/180" alt="">
-    </div>
-
-     <div id="nomeplaylist"> 
-        <h3>Musica italiana</h3>
-    </div>
-
-    <div class="boxlista">
-
-        <div class="riga">
-            <div class="elenco"><img class="imgartista" src="https://picsum.photos/60" alt=""> <p> Nome Artista <br> titolo canzone</p></div>
-            <div class="cart"><h6>1.99 $</h6><img class="imgcart" src="https://picsum.photos/30" alt=""></div>
-        </div>
-        <br>
-        <div class="riga">
-            <div class="elenco"><img class="imgartista" src="https://picsum.photos/60" alt=""> <p> Nome Artista <br> titolo canzone</p></div>
-            <div class="cart"><h6>1.99 $</h6><img class="imgcart" src="https://picsum.photos/30" alt=""></div>
-        </div>
-        <br>
-        <div class="riga">
-            <div class="elenco"><img class="imgartista" src="https://picsum.photos/60" alt=""> <p> Nome Artista <br> titolo canzone</p></div>
-            <div class="cart"><h6>1.99 $</h6><img class="imgcart" src="https://picsum.photos/30" alt=""></div>
-        </div>
-        <br>
-        <div class="riga">
-            <div class="elenco"><img class="imgartista" src="https://picsum.photos/60" alt=""> <p> Nome Artista <br> titolo canzone</p></div>
-            <div class="cart"><h6>1.99 $</h6><img class="imgcart" src="https://picsum.photos/30" alt=""></div>
-        </div>
-        <br>
-        <div class="riga">
-            <div class="elenco"><img class="imgartista" src="https://picsum.photos/60" alt=""> <p> Nome Artista <br> titolo canzone</p></div>
-            <div class="cart"><h6>1.99 $</h6><img class="imgcart" src="https://picsum.photos/30" alt=""></div>
-        </div>
-        <br>
-        <div class="riga">
-            <div class="elenco"><img class="imgartista" src="https://picsum.photos/60" alt=""> <p> Nome Artista <br> titolo canzone</p></div>
-            <div class="cart"><h6>1.99 $</h6><img class="imgcart" src="https://picsum.photos/30" alt=""></div>
-        </div>
-        <br>
-        <div class="riga">
-            <div class="elenco"><img class="imgartista" src="https://picsum.photos/60" alt=""> <p> Nome Artista <br> titolo canzone</p></div>
-            <div class="cart"><h6>1.99 $</h6><img class="imgcart" src="https://picsum.photos/30" alt=""></div>
-        </div>
-        <br>
-        <div class="riga">
-            <div class="elenco"><img class="imgartista" src="https://picsum.photos/60" alt=""> <p> Nome Artista <br> titolo canzone</p></div>
-            <div class="cart"><h6>1.99 $</h6><img class="imgcart" src="https://picsum.photos/30" alt=""></div>
-        </div>
-        <br>
-        <div class="riga">
-            <div class="elenco"><img class="imgartista" src="https://picsum.photos/60" alt=""> <p> Nome Artista <br> titolo canzone</p></div>
-            <div class="cart"><h6>1.99 $</h6><img class="imgcart" src="https://picsum.photos/30" alt=""></div>
-        </div>
-        <br>
-        <div class="riga">
-            <div class="elenco"><img class="imgartista" src="https://picsum.photos/60" alt=""> <p> Nome Artista <br> titolo canzone</p></div>
-            <div class="cart"><h6>1.99 $</h6><img class="imgcart" src="https://picsum.photos/30" alt=""></div>
-        </div>
-         <br>
-        <div class="riga">
-            <div class="elenco"><img class="imgartista" src="https://picsum.photos/60" alt=""> <p> Nome Artista <br> titolo canzone</p></div>
-            <div class="cart"><h6>1.99 $</h6><img class="imgcart" src="https://picsum.photos/30" alt=""></div>
-        </div>
-        
-    </div>
-
-</div>
-    
-</body>
+    <script src="../javascript/catalogo.js" defer></script>
+  </head>
+  <body>
+    <h3>Catalogo</h3>
+    <hr />
+    <label for="artista">Artista</label>
+    <br />
+    <select name="artista" id="artista">
+      <option value="qualsiasi">Qualsiasi</option>
+    </select>
+    <br />
+    <label for="genere">Genere</label>
+    <br />
+    <select name="genere" id="genere">
+      <option value="qualsiasi">Qualsiasi</option>
+      <option value="pop">Pop</option>
+      <option value="hip-hop">Hip-Hop</option>
+      <option value="rock">Rock</option>
+      <option value="napoli">Napoli Centro</option>
+      <option value="rap">Rap</option>
+      <option value="techno">Techno</option>
+      <option value="house">House</option>
+      <option value="jazz">Jazz</option>
+    </select>
+    <br />
+    <label for="anno">Anno di uscita</label>
+    <br />
+    <select name="anno" id="anno">
+      <option value="qualsiasi">Qualsiasi</option>
+    </select>
+    <br />
+    <input type="button" value="Mostra" id="mostra" onclick="mostra()" />
+    <div id="canzoni"></div>
+  </body>
 </html>
