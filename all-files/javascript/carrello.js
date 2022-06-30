@@ -11,22 +11,22 @@ function mostra() {
     }
     for (let i = 0; i < canzoni.length; i++) {
       let riquadro = document.createElement("div");
-      riquadro.setAttribute("class", "prodotto-cart");
+      riquadro.setAttribute("class", "prodotto");
       riquadro.innerHTML =
-        "<div class='img-container'><img class='img-song' src=" +
+        "<div class='imgContainer'><img class='imgCanzone' src=" +
         canzoni[i].url +
-        "></div><div class='date-container'><p>Nome: " +
+        "></div><div class='datiCanzone'><p>Nome: " +
         canzoni[i].canzone +
-        "</p><p class='artist-song'>Artista: " +
+        "</p><p class='artistaCanzone'>Artista: " +
         canzoni[i].artista +
-        "</p><p class='price-song'>Prezzo: " +
+        "</p><p class='prezzoCanzone'>Prezzo: " +
         canzoni[i].prezzo +
         "€</p></div>";
       let rimuovi = document.createElement("div");
       rimuovi.setAttribute("onclick", "rimuovi(" + i + ")");
-      rimuovi.setAttribute("class", "cancel-container");
+      rimuovi.setAttribute("class", "rimuoviCanzone");
       rimuovi.setAttribute("id", i);
-      rimuovi.innerHTML = "<img src='../img/cancel.png'>";
+      rimuovi.innerHTML = "<img src='../immagini/cancel.png'>";
       riquadro.append(rimuovi);
       pagina.appendChild(riquadro);
     }
