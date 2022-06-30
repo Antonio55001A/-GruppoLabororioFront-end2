@@ -35,19 +35,19 @@ function mostra() {
     }
     let filtroCanzoni = [...canzoni];
     let filtroArtista = document.getElementById("artista").value;
-    if (filtroArtista !== "qualsiasi") {
+    if (filtroArtista !== "selected disabled") {
       filtroCanzoni = filtroCanzoni.filter(
         (canzone) => canzone.artista === filtroArtista
       );
     }
     let filtroGenere = document.getElementById("genere").value;
-    if (filtroGenere !== "qualsiasi") {
+    if (filtroGenere !== "selected disabled") {
       filtroCanzoni = filtroCanzoni.filter(
         (canzone) => canzone.genere === filtroGenere
       );
     }
     let filtroAnno = document.getElementById("anno").value;
-    if (filtroAnno !== "qualsiasi") {
+    if (filtroAnno !== "selected disabled") {
       filtroCanzoni = filtroCanzoni.filter(
         (canzone) => canzone.anno == filtroAnno
       );

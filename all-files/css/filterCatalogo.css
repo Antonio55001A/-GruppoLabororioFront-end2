@@ -7,7 +7,7 @@ select {
   outline:0;
   box-shadow:none;
   border:0!important;
-  background: #ffffff;
+  background: #f4f4f4;
   background-image: none;
   flex: 1;
   padding: 0 .5em;
@@ -22,7 +22,7 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 30em;
+  width: 33em;
   height: 3em;
   line-height: 3;
   background: #ffffff;
