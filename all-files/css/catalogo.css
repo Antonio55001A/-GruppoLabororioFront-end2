@@ -1,84 +1,36 @@
-
-#container{
-    height: 1000px;
-}   
-
-#boximg{
-    position: -webkit-sticky;
-    position: sticky;
-    height: 200px;
-    display: flex;
-    top: 0;
-    background-color: rgb(254, 248, 255);
-    padding-bottom: 60px;
+*{
+	padding: 0;
+	margin: 0;
+    font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
 }
 
-#img1{
-    padding-top: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#nomeplaylist{
-    height: 60px;   
-}
-
-h3{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center; 
-    
-}
-
-.boxlista{
-    height: 500px;
+.container-all{
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
-.riga{
+.title{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 60px;
-    width: 100%;
-}
-
-.elenco{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    margin-right: 20px;
-    width: 60%;
-    height: 60px;
-}
-
-p{
+    align-items: flex-start;
     margin-left: 20px;
-    font-size: smaller;
 }
 
-.cart{
+#catalogo{
+    font-size: 40px;
+}
+
+.filter{
     display: flex;
     flex-direction: row;
-    width: 28%;
-    height:60px ;
-    justify-content: center;   
+    justify-content:    center;
+    align-items: center;
+    width: 100%;
 }
-
-.imgcart{
-    height: 60px;
-    margin-left: 30px;
-}
-
-.imgartista{
-    height:60px ;
-}
-
-h6{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 20%;
+.container-select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
@@ -86,17 +38,6 @@ h6{
 
 
 
-@media screen and (max-width: 700px) {
-
-    .column {
-        width: 100% !important;
-    }
-
-    .content-flex {
-        display: flex;
-        flex-direction: column;
-    }
-}        
 
 
 
