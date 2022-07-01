@@ -1,9 +1,15 @@
 var canzoni = JSON.parse(localStorage.getItem("canzoni"));
-if (canzoni == null) {
-  var canzoni = [];
-}
 document.getElementById("aggiungi").addEventListener("click", function (event) {
   event.preventDefault();
+  for (let i = 0; i < canzoni.length; i++) {
+    if (
+      canzoni[i].canzone == document.getElementById("canzone").value &&
+      canzoni[i].artista == document.getElementById("artista").value
+    ) {
+      alert("La canzone è già stata inserita nel catalogo.");
+      return;
+    }
+  }
   if (
     controllo("url") == true &&
     controllo("canzone") == true &&
@@ -25,6 +31,8 @@ document.getElementById("aggiungi").addEventListener("click", function (event) {
     };
     canzoni.push(canzone);
     localStorage.setItem("canzoni", JSON.stringify(canzoni));
+  } else {
+    alert("I campi non sono stati riempiti.");
   }
 });
 function controllo(campo) {

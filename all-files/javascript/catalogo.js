@@ -1,8 +1,4 @@
 var canzoni = JSON.parse(localStorage.getItem("canzoni"));
-
-
-
-
 if (canzoni == null) {
   var canzoni = [];
 } else {
@@ -33,7 +29,7 @@ if (canzoni == null) {
 mostra();
 function mostra() {
   if (canzoni != null) {
-    let pagina = document.getElementById("canzoni");
+    let pagina = document.getElementById("container-all");
     while (pagina.firstChild) {
       pagina.removeChild(pagina.firstChild);
     }
@@ -58,23 +54,53 @@ function mostra() {
     }
     for (let i = 0; i < filtroCanzoni.length; i++) {
       let riquadro = document.createElement("div");
-      riquadro.setAttribute("class", "prodotto");
+      /*
+      <div class="row-songs">
+        <div class="img">
+          <img
+            src="/all-files/immagini/colore-acrilico-arancione.jpg"
+            width="50px"
+            height="50px"
+          />
+        </div>
+
+        <div class="title-artist-nameAlbum">
+          <h4 class="title-of-songs">Tomorrowland</h4>
+          <h5 class="name-of-artista">Il pagante</h5>
+        </div>
+        <div class="add-to-cart">
+          <span class="price">1.99€</span>
+          <img
+            id="cart"
+            src="/all-files/immagini/add-shopping-cart-icon-301424.png"
+            width="40px"
+            height="40px"
+          />
+        </div>
+      </div>
+      */
+      riquadro.setAttribute("class", "row-songs");
       riquadro.innerHTML =
-        "<div class='imgContainer'><img class='imgCanzone' src=" +
+        "<div class='img'><img src='" +
         filtroCanzoni[i].url +
-        "></div><div class='datiCanzone'><p>Nome: " +
+        "' width='50px' height='50px'></div><div class='title-artist-nameAlbum'><h4 class='title-of-songs'>" +
         filtroCanzoni[i].canzone +
-        "</p><p class='artistaCanzone'>Artista: " +
-        canzoni[i].artista +
-        "</p><p class='prezzoCanzone'>Prezzo: " +
+        "</h4><h5 class='name-of-artista'>" +
+        filtroCanzoni[i].artista +
+        "</h5></div><div class='add-to-cart'><span class='price'>" +
         filtroCanzoni[i].prezzo +
-        "€</p></div>";
-      let aggiungi = document.createElement("div");
+        "€</span>";
+      let aggiungi = document.createElement("img");
       aggiungi.setAttribute("onclick", "aggiungi(" + i + ")");
-      aggiungi.setAttribute("class", "aggiungiCarrello");
-      aggiungi.setAttribute("id", i);
-      aggiungi.innerHTML = "<img src='../immagini/shopping.png'>";
+      aggiungi.setAttribute(
+        "src",
+        "/all-files/immagini/add-shopping-cart-icon-301424.png"
+      );
+      aggiungi.setAttribute("id", "cart");
+      aggiungi.setAttribute("width", "40px");
+      aggiungi.setAttribute("height", "40px");
       riquadro.append(aggiungi);
+      riquadro.innerHTML += "</div>";
       pagina.appendChild(riquadro);
     }
   }

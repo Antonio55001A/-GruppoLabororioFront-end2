@@ -1,7 +1,4 @@
 var canzoni = JSON.parse(localStorage.getItem("canzoni"));
-if (canzoni == null) {
-  var canzoni = [];
-}
 mostra();
 function mostra() {
   if (canzoni != null) {
