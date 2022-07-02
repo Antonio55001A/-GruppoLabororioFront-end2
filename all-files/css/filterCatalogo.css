@@ -22,7 +22,7 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 33em;
+  width: 35em;
   height: 3em;
   line-height: 3;
   background: #ffffff;
@@ -30,12 +30,12 @@ select::-ms-expand {
   border-radius: .25em;
 }
 .select::after {
-  content: '\25BC';
+  content: '\25BC'; 
   position: absolute;
   top: 0;
   right: 0;
   padding: 0 1em;
-  background: #2b2e2e;
+  background: #e5e5e5;
   cursor:pointer;
   pointer-events:none;
   transition:.25s all ease;

@@ -84,6 +84,9 @@
 }
 
 
-.icon-remove{
+.icon-remove:hover{
     margin-bottom: 5px;
+    cursor: pointer;
+    animation: wooble;
+    animation-duration: 1.0s;
 }

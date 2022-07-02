@@ -1,8 +1,9 @@
 *{
 	padding: 0;
 	margin: 0;
-    font-family: 'Open Sans', sans-serif;
-	box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(18, 18, 18);
 }
 
 .container-all{
@@ -14,16 +15,26 @@
     display: flex;
     align-items: flex-start;
     margin-left: 20px;
+    margin-bottom: 12px;
+    margin: 10px;
 }
 
 #catalogo{
+    color: white;
     font-size: 40px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+#arrow{
+    cursor: pointer;
 }
 
 .container-select{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .container-scritta{
@@ -55,22 +66,23 @@
 .title-artist-nameAlbum{
     display: flex;
     flex-direction: column;
-    width: 55%;
-    margin-left: 15px;
+    width: 75%;
+    margin-left: 5.5%;
 }
 .title-of-songs{
-    font-size: 16px;
+    color: white;
+    font-size: 14px;
 }
 .name-of-artista{
+    color: rgb(182, 182, 182);
     margin-top: 8px;
     font-size: 12px;
-    margin-left: 4px;
 }
 .add-to-cart{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 35%;
+    width: 15%;
 }
 .animate__animated.animate__tada{
     cursor: pointer;
@@ -84,6 +96,8 @@
 
 .price{
     font-size: 15px;
+    color: white;
+
 }
 
 

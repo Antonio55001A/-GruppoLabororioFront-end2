@@ -19,9 +19,9 @@ function mostra(playlist) {
       riquadro.innerHTML =
         "<div class='img'><img class='icon-row-menu' src='" +
         filtroCanzoni[i].url +
-        "'></div><div <span class='text-storie'>" +
+        "'></div><div class='testo-prezzo' <span class='text-storie'>" +
         filtroCanzoni[i].prezzo +
-        "€</span>";
+        "€</span><img class='buy-cart' src='/all-files/immagini/add-to-cart-3046 (1).png' width='20px' height='20px'></div>";
       pagina.appendChild(riquadro);
     }
   }

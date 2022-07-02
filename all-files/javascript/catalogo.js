@@ -94,7 +94,7 @@ function mostra() {
       aggiungi.setAttribute("onclick", "aggiungi(" + i + ")");
       aggiungi.setAttribute(
         "src",
-        "/all-files/immagini/add-shopping-cart-icon-301424.png"
+        "/all-files/immagini/images (1)_preview_rev_1.png"
       );
       aggiungi.setAttribute("id", "cart");
       aggiungi.setAttribute("width", "40px");
