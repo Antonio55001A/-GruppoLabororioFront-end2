@@ -1,3 +1,4 @@
+// Lista delle canzoni presenti nel catalogo
 var canzoni = JSON.parse(localStorage.getItem("canzoni"));
 if (canzoni == null) {
   var canzoni = [];
@@ -243,16 +244,25 @@ if (canzoni == null) {
   });
   localStorage.setItem("canzoni", JSON.stringify(canzoni));
 }
+// Carrello con canzoni
 var carrello = JSON.parse(localStorage.getItem("carrello"));
 if (carrello == null) {
   var carrello = [];
   localStorage.setItem("carrello", JSON.stringify(carrello));
 }
+// Quantità dei prodotti
 var quantita = JSON.parse(localStorage.getItem("quantita"));
 if (quantita == null) {
   var quantita = [];
   localStorage.setItem("quantita", JSON.stringify(quantita));
 }
+// Reportistica
+var report = JSON.parse(localStorage.getItem("report"));
+if (report == null) {
+  var report = [];
+  localStorage.setItem("report", JSON.stringify(report));
+}
+// Funzione per aggiungere elementi al carrello
 function aggiungiAlCarrello(canzone) {
   if (
     carrello.some((cerca) => JSON.stringify(cerca) === JSON.stringify(canzone))

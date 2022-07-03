@@ -6,7 +6,7 @@ document.getElementById("aggiungi").addEventListener("click", function (event) {
       canzoni[i].canzone == document.getElementById("canzone").value &&
       canzoni[i].artista == document.getElementById("artista").value
     ) {
-      alert("La canzone è già stata inserita nel catalogo.");
+      alert("La canzone è già stata inserita nel catalogo");
       return;
     }
   }
@@ -31,8 +31,9 @@ document.getElementById("aggiungi").addEventListener("click", function (event) {
     };
     canzoni.push(canzone);
     localStorage.setItem("canzoni", JSON.stringify(canzoni));
+    alert("La canzone è stata aggiunta al catalogo");
   } else {
-    alert("I campi non sono stati riempiti.");
+    alert("I campi non sono stati riempiti");
   }
 });
 function controllo(campo) {

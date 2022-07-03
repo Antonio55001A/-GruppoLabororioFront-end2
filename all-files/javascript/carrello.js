@@ -1,5 +1,6 @@
 var carrello = JSON.parse(localStorage.getItem("carrello"));
 var quantita = JSON.parse(localStorage.getItem("quantita"));
+var report = JSON.parse(localStorage.getItem("report"));
 mostra();
 function mostra() {
   if (carrello != null) {
@@ -7,6 +8,8 @@ function mostra() {
     while (pagina.firstChild) {
       pagina.removeChild(pagina.firstChild);
     }
+    let opzioni = document.getElementById("opzioni");
+    opzioni.style.display = "block";
     let totale = 0;
     for (let i = 0; i < carrello.length; i++) {
       let riquadro = document.createElement("div");
@@ -52,6 +55,7 @@ function mostra() {
       riquadroTotale.innerHTML = "Totale: " + totale + "€";
     } else {
       riquadroTotale.innerHTML = "Il carrello è vuoto";
+      opzioni.style.display = "none";
     }
   }
 }
@@ -72,8 +76,15 @@ function reimposta() {
 }
 function cambiaQuantita(i) {
   quantita[i] = parseInt(document.getElementById(i).value);
-  console.log(typeof quantita[i]);
   localStorage.setItem("quantita", JSON.stringify(quantita));
   mostra();
 }
-function acquista() {}
+function acquista() {
+  for (let i = 0; i < carrello.length; i++) {
+    carrello[i].quantita = quantita[i];
+  }
+  report.push(carrello);
+  localStorage.setItem("report", JSON.stringify(report));
+  svuota();
+  alert("Acquisto effettuato");
+}
