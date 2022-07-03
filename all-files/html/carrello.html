@@ -6,44 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrello</title>
     <link rel="stylesheet" href="/all-files/css/carrello.css">
-  
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
+    />
+    <script src="/all-files/javascript/localStorage.js" defer></script>
+    <script src="/all-files/javascript/carrello.js" defer></script>
   </head>
     
     <div class="container-all">
 
       <div class="icona-indietro">
-        <img src="/all-files/immagini/back_112351 (1).png" width="40px" height="40px">
+        <a href="/all-files/html/catalogo.html">
+          <img src="/all-files/immagini/back_112351 (1).png" width="40px" height="40px">
+        </a>
       </div>
     
       <div class="name">
          <h3 id="cart">Il tuo carrello </h3>
         </div>
 
-   
-    <div id="canzoni">
-      <div class="prodotto">
-        <div class="imgContainer">
-          <img class="imgCanzone" src="/all-files/immagini/colore-acrilico-arancione.jpg" width="45px" height="45px">
-        </div>
-        <div class="datiCanzone">
-          <h4 class="nome">Entro in Pass</h4>
-          <h5 class="artistaCanzone">Il pagante</h5>
-        </div>
-        <div class="icon">
-          <h5 class="prezzoCanzone">12€</h5>
-          <img class="icon-remove" src="/all-files/immagini/58f9a678880eaf839daef69905721457.png" width="30px" height="30px"></div>
-      </div>
+      <div id="carrello"></div>
+
     </div>
-
-
-    <!-- qui si chiude container-all -->
-  </div>
-
+    <div id="totale"></div>
     <button onclick="svuota()">Svuota</button>
     <button onclick="acquista()">Acquista</button>
   </body>
