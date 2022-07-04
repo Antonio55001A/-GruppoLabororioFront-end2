@@ -19,9 +19,11 @@ function mostra() {
           carrelloAttuale[j].canzone +
           "</h4><h5 class='name-of-artista'>" +
           carrelloAttuale[j].artista +
-          "</h5></div><div class='add-to-cart'><span class='price'>" +
+          "</h5></div><div class='add-to-cart'><span class='price'>Prezzo: " +
           parseFloat(carrelloAttuale[j].prezzo).toFixed(2) +
-          "€</span>";
+          "€</span></div><div class='quantita'>Quantità: " +
+          carrelloAttuale[j].quantita +
+          "</div>";
         carrello.appendChild(canzone);
       }
       carrello.innerHTML += "<hr>";

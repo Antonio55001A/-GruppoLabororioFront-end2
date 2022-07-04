@@ -43,7 +43,7 @@ function mostra() {
         i +
         ")' value=" +
         JSON.parse(quantita[i]) +
-        "><img class='icon-remove' src='/all-files/immagini/58f9a678880eaf839daef69905721457.png' width='30px' height='30px' onclick='rimuovi(" +
+        "><img class='icon-remove' src='/all-files/immagini/cancel.png' width='30px' height='30px' onclick='rimuovi(" +
         i +
         ")'></div>";
       pagina.appendChild(riquadro);
