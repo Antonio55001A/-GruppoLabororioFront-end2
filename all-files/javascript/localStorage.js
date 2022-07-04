@@ -1,3 +1,4 @@
+// Lista delle canzoni presenti nel catalogo
 var canzoni = JSON.parse(localStorage.getItem("canzoni"));
 if (canzoni == null) {
   var canzoni = [];
@@ -9,7 +10,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "hip-hop",
     playlist: "gb",
-    prezzo: 0.99,
+    prezzo: 1.99,
   });
   canzoni.push({
     url: "https://images.unsplash.com/photo-1591827205058-9ffc033010fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VucmlzZSUyMG9uJTIwdGhlJTIwc2VhfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
@@ -29,7 +30,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "rock",
     playlist: "gb",
-    prezzo: 0.99,
+    prezzo: 0.49,
   });
   canzoni.push({
     url: "https://img.apmcdn.org/85de879c11543275ba870e55fb2558785486d661/square/4606e5-20171205-stormovervegas.jpg",
@@ -49,7 +50,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "pop",
     playlist: "gb",
-    prezzo: 0.99,
+    prezzo: 1.49,
   });
   canzoni.push({
     url: "https://assets.simpleviewcms.com/simpleview/image/fetch/c_limit,h_1200,q_75,w_1200/https://images.citybreak.com/image.aspx%3FImageId%3D6648092",
@@ -69,7 +70,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "rock",
     playlist: "gb",
-    prezzo: 0.99,
+    prezzo: 0.49,
   });
   canzoni.push({
     url: "https://www.frontgate.com/homeplusstyle/wp-content/uploads/ArizonaOasis_1.jpg",
@@ -89,7 +90,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "pop",
     playlist: "gb",
-    prezzo: 0.99,
+    prezzo: 1.49,
   });
   canzoni.push({
     url: "https://viaggiatore.net/wp-content/uploads/2019/01/The-Wave-in-Arizona-rocky-desert-rock-formation-.jpg",
@@ -119,7 +120,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "pop",
     playlist: "arabi",
-    prezzo: 0.99,
+    prezzo: 1.99,
   });
   canzoni.push({
     url: "https://images.squarespace-cdn.com/content/v1/547aeee3e4b0780d55c0fe36/1431012728047-NAKE3Z7NASTW8HKKFFS2/image-asset.jpeg?format=1000w",
@@ -129,7 +130,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "pop",
     playlist: "arabi",
-    prezzo: 0.99,
+    prezzo: 1.49,
   });
   canzoni.push({
     url: "https://throneandvine.com/wp-content/uploads/2020/09/sudtriol-autumn.jpg",
@@ -149,7 +150,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "techno",
     playlist: "arabi",
-    prezzo: 0.99,
+    prezzo: 1.49,
   });
   canzoni.push({
     url: "https://www.menkind.co.uk/media/catalog/product/cache/84a9762dea65cd4d66747ad9a34bdb64/8/6/86910-gliding-with-a-winch-luanch-experience-w1.jpg",
@@ -159,7 +160,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "rap",
     playlist: "arabi",
-    prezzo: 0.99,
+    prezzo: 1.99,
   });
   canzoni.push({
     url: "https://oxalisadventure.com/uploads/2021/08/bannermobile2-(1000x1000)__637645255040453341.jpg",
@@ -179,7 +180,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "napoli",
     playlist: "ita",
-    prezzo: 0.99,
+    prezzo: 0.49,
   });
   canzoni.push({
     url: "https://www.yorkshirewildlifepark.com/media/ii0kdyhq/polar-bear.jpg?crop=0.33333333333333331,0,0,0&cropmode=percentage&width=1000&height=1000&rnd=132884434928000000",
@@ -189,7 +190,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "rock",
     playlist: "ita",
-    prezzo: 0.99,
+    prezzo: 1.49,
   });
   canzoni.push({
     url: "https://www.photocircle.net/it/public/uploads/photos/thumbnail_1000x1000/79052-Elefantenmutter-mit-Baby--by-dennis-wehrmann.jpg",
@@ -209,7 +210,7 @@ if (canzoni == null) {
     descrizione: "",
     genere: "rap",
     playlist: "ita",
-    prezzo: 0.99,
+    prezzo: 0.49,
   });
   canzoni.push({
     url: "https://www.travelandleisure.com/thmb/tDIQZwYYIsfVOadLa94bYeWLquU=/1000x1000/smart/filters:no_upscale()/rainbow-river-cano-cristales-colombia-RAINBOWRIVER1118-ff61ecc9714747f5ba131e5ceac14af9.jpg",
@@ -239,7 +240,39 @@ if (canzoni == null) {
     descrizione: "",
     genere: "jazz",
     playlist: "ita",
-    prezzo: 0.99,
+    prezzo: 0.49,
   });
   localStorage.setItem("canzoni", JSON.stringify(canzoni));
+}
+// Carrello con canzoni
+var carrello = JSON.parse(localStorage.getItem("carrello"));
+if (carrello == null) {
+  var carrello = [];
+  localStorage.setItem("carrello", JSON.stringify(carrello));
+}
+// Quantità dei prodotti
+var quantita = JSON.parse(localStorage.getItem("quantita"));
+if (quantita == null) {
+  var quantita = [];
+  localStorage.setItem("quantita", JSON.stringify(quantita));
+}
+// Reportistica
+var report = JSON.parse(localStorage.getItem("report"));
+if (report == null) {
+  var report = [];
+  localStorage.setItem("report", JSON.stringify(report));
+}
+// Funzione per aggiungere elementi al carrello
+function aggiungiAlCarrello(canzone) {
+  if (
+    carrello.some((cerca) => JSON.stringify(cerca) === JSON.stringify(canzone))
+  ) {
+    alert("La canzone è già presente nel carrello");
+  } else {
+    carrello.push(canzone);
+    quantita.push(1);
+    localStorage.setItem("carrello", JSON.stringify(carrello));
+    localStorage.setItem("quantita", JSON.stringify(quantita));
+    alert("Canzone aggiunta al carrello");
+  }
 }

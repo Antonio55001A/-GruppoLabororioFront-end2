@@ -1,3 +1,4 @@
+// Creazione delle opzioni dei filtri
 var canzoni = JSON.parse(localStorage.getItem("canzoni"));
 if (canzoni == null) {
   var canzoni = [];
@@ -26,6 +27,12 @@ if (canzoni == null) {
     selectAnno.appendChild(opzione);
   }
 }
+// Filtri impostati tramite link
+let linkGenere = localStorage.getItem("genere");
+if (linkGenere != null) {
+  document.getElementById("genere").value = linkGenere;
+  localStorage.removeItem("genere");
+}
 mostra();
 function mostra() {
   if (canzoni != null) {
@@ -34,6 +41,15 @@ function mostra() {
       pagina.removeChild(pagina.firstChild);
     }
     let filtroCanzoni = [...canzoni];
+    let linkPlaylist = localStorage.getItem("playlist");
+    if (linkPlaylist != null) {
+      linkPlaylist = linkPlaylist.substring(0, linkPlaylist.length - 4);
+      let titolo = document.getElementById("catalogo");
+      titolo.innerHTML = linkPlaylist.toUpperCase() + " MUSIC";
+      filtroCanzoni = filtroCanzoni.filter(
+        (canzone) => canzone.playlist === linkPlaylist
+      );
+    }
     let filtroArtista = document.getElementById("artista").value;
     if (filtroArtista !== "selected disabled") {
       filtroCanzoni = filtroCanzoni.filter(
@@ -88,10 +104,13 @@ function mostra() {
         "</h4><h5 class='name-of-artista'>" +
         filtroCanzoni[i].artista +
         "</h5></div><div class='add-to-cart'><span class='price'>" +
-        filtroCanzoni[i].prezzo +
+        parseFloat(filtroCanzoni[i].prezzo).toFixed(2) +
         "€</span>";
       let aggiungi = document.createElement("img");
-      aggiungi.setAttribute("onclick", "aggiungi(" + i + ")");
+      aggiungi.setAttribute(
+        "onclick",
+        "aggiungiAlCarrello(" + JSON.stringify(filtroCanzoni[i]) + ")"
+      );
       aggiungi.setAttribute(
         "src",
         "/all-files/immagini/images (1)_preview_rev_1.png"
