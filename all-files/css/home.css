@@ -7,7 +7,6 @@
 
 #container-header {
   background-color: rgb(43, 43, 43);
-<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -21,28 +20,14 @@
 #logo1{
   height: 90px;
   cursor: pointer;
-=======
   padding: 1%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+
 }
 
 .logo {
   width: 150px;
   height: 150px;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
->>>>>>> 1a8e83584c6e794068d12c67f65ec2ff2e218ef2
+
 }
 
 .container-homepage {
