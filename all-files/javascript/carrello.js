@@ -9,8 +9,7 @@ function mostra() {
       pagina.removeChild(pagina.firstChild);
     }
     let opzioni = document.getElementById("opzioni");
-    opzioni.style.display = "block";
-    let totale = 0;
+      let totale = 0;
     for (let i = 0; i < carrello.length; i++) {
       let riquadro = document.createElement("div");
       /*
@@ -37,7 +36,7 @@ function mostra() {
         carrello[i].artista +
         "</h5></div><div class='icon'><h5 class='prezzoCanzone'>" +
         parseFloat(carrello[i].prezzo).toFixed(2) +
-        "€</h5><input type='number' id='" +
+        "€</h5><input class='barra-quant' type='number' id='" +
         i +
         "' min=1 pattern='d*' onchange='cambiaQuantita(" +
         i +

@@ -113,11 +113,11 @@ function mostra() {
       );
       aggiungi.setAttribute(
         "src",
-        "/all-files/immagini/images (1)_preview_rev_1.png"
+        "/all-files/immagini/carello+.png "
       );
       aggiungi.setAttribute("id", "cart");
-      aggiungi.setAttribute("width", "40px");
-      aggiungi.setAttribute("height", "40px");
+      aggiungi.setAttribute("width", "100px");
+      aggiungi.setAttribute("height", "60px");
       riquadro.append(aggiungi);
       riquadro.innerHTML += "</div>";
       pagina.appendChild(riquadro);
