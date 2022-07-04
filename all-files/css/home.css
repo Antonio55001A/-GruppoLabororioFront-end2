@@ -5,26 +5,21 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 #container-header {
   background-color: rgb(43, 43, 43);
-  padding: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 23px;
   padding-left: 8%;
-  padding-right: 8%;
 }
-
-.logo {
-  width: 80px;
-  height: 80px;
+#logo {
+  width: 350px;
+  height: 150px;
   cursor: pointer;
-  margin-left: 38%;
+}
+#logo1{
+  height: 90px;
+  cursor: pointer;
 }
 
 .container-homepage {
@@ -32,7 +27,7 @@ a {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .container-generi {
   height: 190px;
@@ -63,25 +58,37 @@ a {
   font-size: 15px;
 }
 
+.conteiner-linea{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ align-items: center;
+
+}
+.linea{
+  width: 80%;
+}
+
 .Title-best-product {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 25px;
+  margin-top:20px;
   margin-left: 20px;
 }
 
 .Name-Playlist {
-  font-size: 30px;
-  font-weight: 450;
-  color: white;
+  font-size: 36px;
+  font-weight: 1500;
+  color: rgb(27, 27, 27);
 }
 
 /* inizio style delle top music immagini + nomi + prezzi */
 .container-top-music-img-title-and-price {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .top-music-container-row {
@@ -129,20 +136,18 @@ a {
   display: flex;
   align-items: center;
   height: 230px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   overflow-x: scroll;
 }
 
 .gruppo {
   height: 85%;
-  background-color: rgb(47, 43, 43);
+  background-color: rgb(209 209 209);
   min-width: 160px;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
-  box-shadow: rgba(220, 220, 220, 0.512) 0px 4px 12px;
-}
-
+  box-shadow: rgb(0 0 0 / 30%) 0px 4px 12px;}
 .img {
   display: flex;
   width: 100%;
@@ -152,12 +157,18 @@ a {
   width: 100%;
   height: 97%;
 }
-.testo-prezzo {
+.testo-prezzo{
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 15%;
-  justify-content: center;
+  justify-content:center ;  
   background-color: white;
   align-items: center;
 }
+
+a{
+  text-decoration: none;
+}
+
+
