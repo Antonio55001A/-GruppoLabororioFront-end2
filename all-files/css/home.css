@@ -11,20 +11,26 @@ a {
 
 #container-header {
   background-color: rgb(43, 43, 43);
-  padding: 30px;
+  padding: 1%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 23px;
-  padding-left: 8%;
-  padding-right: 8%;
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  margin-left: 38%;
+  width: 150px;
+  height: 150px;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .container-homepage {
