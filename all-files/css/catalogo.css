@@ -99,14 +99,14 @@ option {
 .title-artist-nameAlbum {
   margin-left: 5px;
 
-}
+}}
 
 @media only screen and (min-width: 1100px) {
 
   .title-artist-nameAlbum {
     margin-left: -50px;
   
-  }
+  }}
 .name-of-artista {
   color: rgb(91, 91, 91);
   margin-top: 8px;
