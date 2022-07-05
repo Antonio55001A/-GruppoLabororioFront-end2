@@ -65,6 +65,13 @@
   background-color: #191414;
   color: white;
 }
+
+@media only screen and (min-width: 700px) {
+  .genere {
+width: 250px;
+height: 80px;
+  }
+}
 .title-generi {
   font-weight: bold;
   text-transform: capitalize;
@@ -105,7 +112,7 @@
 .container-top-music-img-title-and-price {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .top-music-container-row {
@@ -123,7 +130,15 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   transition: 0.8s;
+  margin-top: 30px;
 }
+
+@media only screen and (min-width: 700px) {
+  .top-music-container-border {
+width: 500px;
+height: 350px;
+  }}
+
 
 .top-music-container-border:hover {
   transform: scale(1.2);
