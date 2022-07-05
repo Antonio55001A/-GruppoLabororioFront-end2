@@ -21,10 +21,34 @@ option {
   margin-left: -10px;
 }
 
+#title-e-carello{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.titolo{
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  margin-left: 10px;
+}
+.cart{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+#logo1{
+  width: 100px;
+  height: 60px;
+}
+
 #catalogo {
   color: rgb(0, 0, 0);
   font-size: 40px;
-  margin-left: 10px;
   margin-bottom: 7px;
 }
 
@@ -83,10 +107,13 @@ option {
   justify-content: flex-end;
   align-items: center;
   width: 15%;
+  
 }
 .animate__animated.animate__tada {
   cursor: pointer;
 }
+
+
 #cart:hover {
   animation: tada;
   animation-duration: 1s;

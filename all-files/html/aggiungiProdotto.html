@@ -7,30 +7,36 @@
     <title>Aggiungi Prodotto</title>
     <script src="../javascript/localStorage.js" defer></script>
     <script src="../javascript/aggiungiProdotto.js" defer></script>
+    <link rel="stylesheet" href="/all-files/css/aggiungiProdotto.css">
+    <link
+      rel="stylesheet"
+      href="/all-files/css/filterCatalogo.css"
+      type="text/css"
+    />
+
   </head>
   <body>
-    <h3>Aggiungi un prodotto</h3>
-    <hr />
-    <form action="" method="post">
+    <h3 id="add">Aggiungi un prodotto</h3>
+
+    <form action="" id="form" method="post">
       <label for="url">URL immagine</label>
       <br />
-      <input type="text" name="url" id="url" />
+      <input type="text" name="url" class="opzioni" id="url" />
       <br />
       <label for="canzone">Nome canzone</label>
       <br />
-      <input type="text" name="canzone" id="canzone" />
+      <input type="text" name="canzone"  class="opzioni" id="canzone" />
       <br />
       <label for="artista">Nome artista</label>
       <br />
-      <input type="text" name="artista" id="artista" />
+      <input type="text" name="artista" class="opzioni" id="artista" />
       <br />
       <label for="anno">Anno di uscita</label>
       <br />
-      <input type="number" pattern="\d*" name="anno" id="anno" />
+      <input type="number" pattern="\d*" class="opzioni" name="anno" id="anno" />
       <br />
       <label for="descrizione">Descrizione</label>
       <br />
-      <input type="text" name="descrizione" id="descrizione" />
       <br />
       <label for="genere">Genere</label>
       <br />
@@ -68,5 +74,6 @@
       <input type="submit" value="Aggiungi" id="aggiungi" />
       <input type="reset" value="Pulisci campi" />
     </form>
+  </div>
   </body>
 </html>
