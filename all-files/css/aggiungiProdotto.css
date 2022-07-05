@@ -10,6 +10,14 @@
     margin-left: 20px;
     margin-top: 20px;
 }
+.icona-indietro{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -10px;
+  height: 60px;
+  align-items: center;
+}
+
 #form{
     margin-top: 15px;
     margin-left: 20px;
