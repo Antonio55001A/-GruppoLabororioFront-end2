@@ -1,0 +1,138 @@
+*{
+	padding: 0;
+	margin: 0;
+    font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+.container-all{
+    display: flex;
+    flex-direction: column;
+
+}
+.icona-indietro{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -10px;
+    height: 60px;
+    align-items: center;
+}
+
+.name{
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-start;
+    margin-left: 20px;
+    align-items: center;
+}
+#cart{
+    font-size: 22px;
+}
+
+#carrello{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.prodotto{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 70px;
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 10px;
+}
+
+.imgContainer{
+    display: flex;
+    margin-left:10px;
+    align-items: center;
+    width: 10%;
+}
+
+.datiCanzone{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-top: 15px;
+    width: 50%;
+}
+
+.nome{
+    font-size: 16px;
+}
+
+.artistaCanzone{
+    font-size: 13px;
+}
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    width: 40%;
+    align-items: center;
+    flex-direction: row;
+
+}
+.prezzoCanzone{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
+.icon-remove:hover{
+    margin-bottom: 5px;
+    cursor: pointer;
+    animation: wooble;
+    animation-duration: 1.0s;
+}
+.barra-quant{
+    width: 30%;
+}
+#contenitori-scritte{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: 7%;
+    margin-top: 30px;
+}
+
+#totale{
+    font-size: 28px;
+}
+#opzioni{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.bottoni{
+
+    border: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+#svuota{
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    width: 30%;
+    height: 40px;
+}
+
+#acquista{
+    width: 40%;
+    height: 55px;  
+    background-color: rgb(5, 205, 75);
+    color: white;
+    font-size: 18px;
+}
